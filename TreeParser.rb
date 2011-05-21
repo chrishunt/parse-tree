@@ -1,5 +1,10 @@
 require 'ruby-debug'
-require 'tree'
+
+module TreeParser
+  def self.ParseTabTree(tab_tree)
+    tab_tree
+  end
+end
 
 tab_tree =  "Family"
 tab_tree << "\n\tParent1"
@@ -11,4 +16,4 @@ tab_tree << "\n\t\tChild3"
 tab_tree << "\n\tParent2"
 tab_tree << "\n\t\tChild4"
 
-puts tab_tree
+puts TreeParser::ParseTabTree tab_tree
